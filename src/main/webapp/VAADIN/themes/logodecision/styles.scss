@@ -1,0 +1,9 @@
+// Import all the mixins for this theme
+@import "logodecision";
+@import "addons.scss";
+
+.logodecision {
+  // Output the actual theme selectors
+  @include logodecision;
+  @include addons;
+}

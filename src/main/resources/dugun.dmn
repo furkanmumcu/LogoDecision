@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn11.xsd" id="definitions" name="definitions" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="dugun" name="Düğün Hediyesi">
+    <decisionTable id="decisionTable">
+      <input id="input1" label="Eldeki Para">
+        <inputExpression id="inputExpression1" typeRef="integer">        <text>input1</text>
+</inputExpression>
+      </input>
+      <input id="input2" label="Yakınlık">
+        <inputExpression id="LiteralExpression_01nehqq" typeRef="string">        <text>input2</text>
+</inputExpression>
+      </input>
+      <output id="output1" label="Hediye" name="output1" typeRef="string" />
+      <rule id="row-581799498-1">
+        <description>Güzel Paketlet</description>
+        <inputEntry id="UnaryTests_0uf7dgz">        <text><![CDATA[<=50]]></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_16tlycd">        <text><![CDATA["Arkadaş"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_091f6pi">        <text><![CDATA["Fotoğraf Albümü"]]></text>
+</outputEntry>
+      </rule>
+      <rule id="row-581799498-2">
+        <description>Bedene Dikkat</description>
+        <inputEntry id="UnaryTests_1v38pyn">        <text>[51..100]</text>
+</inputEntry>
+        <inputEntry id="UnaryTests_07p3l8b">        <text><![CDATA["Arkadaş"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_1id6h9k">        <text><![CDATA["Gömlek"]]></text>
+</outputEntry>
+      </rule>
+      <rule id="row-581799498-3">
+        <description>Bedene ve renklere dikkat</description>
+        <inputEntry id="UnaryTests_1hgdf89">        <text>[101..150]</text>
+</inputEntry>
+        <inputEntry id="UnaryTests_03lrfuk">        <text><![CDATA["Arkadaş"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_08mrl57">        <text><![CDATA["Gömlek, Kravat veya Eşarp"]]></text>
+</outputEntry>
+      </rule>
+      <rule id="row-581799498-4">
+        <description>Garantili</description>
+        <inputEntry id="UnaryTests_164zt68">        <text><![CDATA[>150]]></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_07e5w93">        <text><![CDATA["Arkadaş"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_0fhx8f9">        <text><![CDATA["Küçük Altın"]]></text>
+</outputEntry>
+      </rule>
+      <rule id="row-581799498-5">
+        <description>İşe yarar</description>
+        <inputEntry id="UnaryTests_1fc11kt">        <text>[10..200]</text>
+</inputEntry>
+        <inputEntry id="UnaryTests_0wrcab2">        <text><![CDATA["Akraba"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_05j6t9e">        <text><![CDATA["Fotoğraf Çerçevesi"]]></text>
+</outputEntry>
+      </rule>
+      <rule id="row-581799498-6">
+        <description>Hoşa gider</description>
+        <inputEntry id="UnaryTests_0fssg1w">        <text>250</text>
+</inputEntry>
+        <inputEntry id="UnaryTests_150glsx">        <text><![CDATA["Akraba"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_0i0yclz">        <text><![CDATA["Yarım Altın"]]></text>
+</outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

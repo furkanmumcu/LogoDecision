@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn11.xsd" id="definitions" name="definitions" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="Tabelle1" name="Tabelle1">
+    <decisionTable id="decisionTable">
+      <input id="input1">
+        <inputExpression id="InputExpression1324255009">
+          <text>input1</text>
+        </inputExpression>
+      </input>
+      <input id="input2">
+        <inputExpression id="InputExpression1675161242">
+          <text>input2</text>
+        </inputExpression>
+      </input>
+      <input id="input3">
+        <inputExpression id="InputExpression868597143">
+          <text>input3</text>
+        </inputExpression>
+      </input>
+      <output id="output" name="output"/>
+      <rule id="excelRow2">
+        <inputEntry id="A2">
+          <text>"foo"</text>
+        </inputEntry>
+        <inputEntry id="B2">
+          <text>&gt; 10</text>
+        </inputEntry>
+        <inputEntry id="C2">
+          <text>500</text>
+        </inputEntry>
+        <outputEntry id="D2">
+          <text>"foofoo"</text>
+        </outputEntry>
+      </rule>
+      <rule id="excelRow3">
+        <inputEntry id="A3">
+          <text>"foo"</text>
+        </inputEntry>
+        <inputEntry id="B3">
+          <text>&lt;= 10</text>
+        </inputEntry>
+        <inputEntry id="C3">
+          <text>&lt;=255</text>
+        </inputEntry>
+        <outputEntry id="D3">
+          <text>"foobar"</text>
+        </outputEntry>
+      </rule>
+      <rule id="excelRow4">
+        <inputEntry id="A4">
+          <text>"bar"</text>
+        </inputEntry>
+        <inputEntry id="B4">
+          <text>&gt; 10</text>
+        </inputEntry>
+        <inputEntry id="C4">
+          <text>-</text>
+        </inputEntry>
+        <outputEntry id="D4">
+          <text>"barbar"</text>
+        </outputEntry>
+      </rule>
+      <rule id="excelRow5">
+        <inputEntry id="A5">
+          <text>"bar"</text>
+        </inputEntry>
+        <inputEntry id="B5">
+          <text>&lt;= 10</text>
+        </inputEntry>
+        <inputEntry id="C5">
+          <text>123</text>
+        </inputEntry>
+        <outputEntry id="D5">
+          <text>"bar"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>
